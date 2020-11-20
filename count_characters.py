@@ -1,3 +1,5 @@
+# programa para contar os caracteres de uma frase e verificar se é menor que tal número ou maior que tal número, assim, mudando a resposta que é enviada ao terminal.
+
 frase = input('Digite uma frase: ')
 nmr = input('Digite um número: ')
 

@@ -18,6 +18,7 @@ def calc_function(reply):
 
     
   if str(reply)[1] != '.':
+    
     while not str(reply).isdigit():
       if str(reply).replace('.', '').isdigit():
        break
@@ -26,6 +27,7 @@ def calc_function(reply):
    
 
   if str(reply)[1] != '.':
+    
    invalid = False
   
    while not invalid:

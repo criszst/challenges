@@ -1,10 +1,13 @@
-number = int(input('Qual é o número para verificar se ele é negativo ou positivo?\n'))
+try:
+ number = int(input('Qual é o número para verificar se ele é negativo ou positivo?\n'))
+except ValueError:
+ number = int(input('formato inválido. Digite um número novamente:\n'))
 
-choice = ''
+reply = ''
 
 if number >= 0:
-    choice = 'número positivo'
+    reply = 'número positivo'
 else:
-    choice = 'número negativo'
+    reply = 'número negativo'
     
-print(choice)
+print(reply)

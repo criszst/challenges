@@ -11,6 +11,6 @@ if not numbers.replace(' ', '').isdigit():
 
 list_filtered = list(set(numbers))
 
-big = max(list_filtered)
+big_number = max(list_filtered)
 
-print(f'Maior número: {big}')
+print(f'Maior número: {big_number}')

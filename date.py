@@ -1,3 +1,5 @@
+# um pequeno "programa" que lê uma data fornecia pelo usuário (no formato dd/mm/yyyy) e, caso essa data for válida, ele imprime "data válida" no terminal, caso não for, ele imprime "data inválida".
+
 def validate(date):
     str(date)
     err = ''
@@ -101,8 +103,6 @@ def validate(date):
          
         
     return True
-         
-
 
 date = input('Digite uma data:\n')
 

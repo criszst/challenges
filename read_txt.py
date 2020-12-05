@@ -3,7 +3,7 @@
 import os.path
 
 if not os.path.isfile('file.txt'):    
-    writeTxt = input('eu não encontrei o arquivo. Sendo assim, qual calculo você deseja no arquivo?\n')
+    writeTxt = input('eu não encontrei o arquivo. Sendo assim, qual cálculo você deseja no arquivo?\n')
     
     if not writeTxt.isdigit():
         isNotDigit = True
@@ -13,7 +13,7 @@ if not os.path.isfile('file.txt'):
              isNotDigit = False
              break
           
-         writeTxt = str(input('apenas escreva números, sem letras. Digite um calculo:\n'))
+         writeTxt = str(input('apenas escreva números, sem letras. Digite um cálculo:\n'))
          
     
     f = open('file.txt', 'a')    
@@ -48,4 +48,4 @@ try:
   print(f'Resultado: {operator}')
   
 except IndexError:    
-    print(f'não há calculos para eu calcular. Texto no arquivo: {read}')
+    print(f'não há calculos para ser calculado. Texto no arquivo: {read}')

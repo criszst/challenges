@@ -4,7 +4,7 @@ numbers = str(input('Quais são os números? Digite abaixo:\n'))
 
 if not numbers.replace(' ', '').isdigit():
     while not numbers.replace(' ', '').isdigit():
-        numbers = str(input('não coloque letras, apenas números. Digite os números novamente::\n').replace(' ', ''))
+        numbers = str(input('não coloque letras, apenas números. Digite os números novamente:\n').replace(' ', ''))
         
         if numbers.isdigit():
             break

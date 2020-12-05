@@ -1,3 +1,5 @@
+# programa para deletar um arquivo que está no repositório local.
+
 import os
 
 arquivo = str(input('Qual é o nome do arquivo?\n'))

@@ -31,11 +31,11 @@ elif question == 2:
  choice = random.randrange(0, 11)
 
  if choice == rdn:
-    print(f'Eu acertei o número {rdn}!')
+    print(f'Descoberto o número sorteado...: {rdn}!')
     
  while choice != int(rdn):
     again = random.randrange(0, 11)
     
     if again == int(rdn):
-        print(f'Eu aceitei o número {rdn}! - while')
+        print(f'Descoberto o número sorteado...: {rdn}. - dentro do while')
         break

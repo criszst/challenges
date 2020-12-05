@@ -9,8 +9,8 @@ if not numbers.replace(' ', '').isdigit():
         if numbers.isdigit():
             break
 
-transformList = list(numbers.replace(' ', ''))
+list_filtered = list(set(numbers))
 
-big = max(transformList)
+big = max(list_filtered)
 
 print(f'Maior número: {big}')

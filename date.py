@@ -1,4 +1,4 @@
-# um pequeno "programa" que lê uma data fornecia pelo usuário (no formato dd/mm/yyyy) e, caso essa data for válida, ele imprime "data válida" no terminal, caso não for, ele imprime "data inválida".
+# um pequeno "programa" que lê uma data fornecida pelo usuário (no formato dd/mm/yyyy) e, caso essa data for válida, ele imprime "data válida" no terminal, caso não for, ele imprime "data inválida".
 
 def validate(date):
     str(date)
@@ -9,6 +9,14 @@ def validate(date):
          err = input('[data inválida] --- a data tem menos que 8 caracteres ou tem mais que 10 caracteres, se tornando, assim, uma data inválida. Exemplo de uma data correta para o sistema: 10/12/2020\n Insira uma data novamente: ')
          
          if len(err) == 8 or len(err) == 9 or len(err) == 10:
+             date = err
+             break
+
+        
+        while len(date) < 8 or len(date) > 10:
+         err = input('[data inválida] --- a data tem menos que 8 caracteres ou tem mais que 10 caracteres, se tornando, assim, uma data inválida. Exemplo de uma data correta para o sistema: 10/12/2020\n Insira uma data novamente: ')
+         
+         if len(str(err)) == 8 or len(str(err)) == 9 or len(str(err)) == 10:
              date = err
              break
            
@@ -123,7 +131,7 @@ def validate(date):
 
 date = input('Digite uma data:\n')
 
-correct_or_no = validate(date)
+true_or_false = validate(date)
 
-if correct_or_no == True:
+if true_or_false == True:
     print('data válida')

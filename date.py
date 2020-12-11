@@ -5,21 +5,30 @@ def validate(date):
     err = ''
     
     if len(date) < 8 or len(date) > 10:
-        
-        while len(date) < 10:
+        while len(date) < 8 and len(date) > 10:
          err = input('[data inválida] --- a data tem menos que 8 caracteres ou tem mais que 10 caracteres, se tornando, assim, uma data inválida. Exemplo de uma data correta para o sistema: 10/12/2020\n Insira uma data novamente: ')
          
-         if len(err) >= 10:
+         if len(err) == 8 or len(err) == 9 or len(err) == 10:
+             date = err
              break
+           
+    if not '/' in date:
+      while not '/' in date:
+        err = input('[date inválida] --- a data nao contém nenhuma barra (/).\nExemplo de uma data correta para o sistema: 1/2/2020.\nDigite uma data novamente:\n')
+        
+        if '/' in err:
+          date = err
+          break
          
          
-    if len(date.replace('/', '')) == 8:
+    if len(date) == 8:
         
       if not date.replace('/', '').isdigit():
          while not date.replace('/', '').isdigit():
           err = input(f'[data inválida] --- apenas coloque números na data.\nExemplo de uma data correta para o sistema: 1/1/2020\nInsira uma data novamente: ')
          
           if str(date).replace('/', '').isdigit():
+             date = err
              break
          
          
@@ -30,6 +39,7 @@ def validate(date):
             err = input('[data inválida] --- a data não contém uma barra (/) nas posições corretas.\nExemplo de uma data correta para o sistema: 1/2/2020\nInsira uma data novamente: ')
             
             if str(err[1]) == '/':
+               date = err
                break
            
          
@@ -40,16 +50,18 @@ def validate(date):
            err = input('[data inválida] --- a data não contém uma barra (/) nas posições corretas.\nExemplo de uma data correta para o sistema: 10/1/2020\nInsira uma data novamente: ')
             
            if str(err[2]) == '/':
+              date = err
               break
           
           
-    elif len(date.replace('/', '')) == 9:
+    elif len(date) == 9:
         
      if not date.replace('/', '').isdigit():
          while not date.replace('/', '').isdigit():
           err = input(f'[data inválida] --- apenas coloque números na data.\nExemplo de uma data correta para o sistema: 10/12/2020\nInsira uma data novamente: ')
          
           if str(err).replace('/', '').isdigit():
+              date = err
               break
          
          
@@ -60,6 +72,7 @@ def validate(date):
             err = input('[data inválida] --- a data não contém uma barra (/) nas posições corretas.\nExemplo de uma data correta para o sistema: 1/2/2020\nInsira uma data novamente: ')
             
             if str(err[2]) == '/':
+               date = err
                break
            
            
@@ -70,16 +83,18 @@ def validate(date):
             err = input('[data inválida] --- a data não contém uma barra (/) nas posições corretas.\nExemplo de uma data correta para o sistema: 10/2/2020\nInsira uma data novamente: ')
             
             if str(err[2]) == '/':
+               date = err
                break
              
          
-    elif len(date.replace('/', '')) == 10:
+    elif len(date) == 10:
         
      if not date.replace('/', '').isdigit():
          while not date.replace('/', '').isdigit():
           err = input(f'[data inválida] --- apenas coloque números na data.\nExemplo de uma data correta para o sistema: 10/12/2020\nInsira uma data novamente: ')
          
           if str(err).replace('/', '').isdigit():
+              date = err
               break
           
      if len(date[0]) == 1:
@@ -89,6 +104,7 @@ def validate(date):
             err = input('[data inválida] --- a data não contém uma barra (/) nas posições corretas.\nExemplo de uma data correta para o sistema: 1/2/2020\nInsira uma data novamente: ')
             
             if str(err[1]) == '/':
+               date = err
                break
            
          
@@ -99,6 +115,7 @@ def validate(date):
            err = input('[data inválida] --- a data não contém uma barra (/) nas posições corretas.\nExemplo de uma data correta para o sistema: 10/1/2020\nInsira uma data novamente: ')
             
            if str(err[2]) == '/':
+              date = err
               break
          
         

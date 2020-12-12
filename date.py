@@ -33,7 +33,7 @@ def validate(date):
         
       if not date.replace('/', '').isdigit():
          while not date.replace('/', '').isdigit():
-          err = input(f'[data inválida] --- apenas coloque números na data.\nExemplo de uma data correta para o sistema: 1/1/2020\nInsira uma data novamente: ')
+          err = input('[data inválida] --- apenas coloque números na data.\nExemplo de uma data correta para o sistema: 1/1/2020\nInsira uma data novamente: ')
          
           if str(date).replace('/', '').isdigit():
              date = err
@@ -66,7 +66,7 @@ def validate(date):
         
      if not date.replace('/', '').isdigit():
          while not date.replace('/', '').isdigit():
-          err = input(f'[data inválida] --- apenas coloque números na data.\nExemplo de uma data correta para o sistema: 10/12/2020\nInsira uma data novamente: ')
+          err = input('[data inválida] --- apenas coloque números na data.\nExemplo de uma data correta para o sistema: 10/12/2020\nInsira uma data novamente: ')
          
           if str(err).replace('/', '').isdigit():
               date = err
@@ -99,7 +99,7 @@ def validate(date):
         
      if not date.replace('/', '').isdigit():
          while not date.replace('/', '').isdigit():
-          err = input(f'[data inválida] --- apenas coloque números na data.\nExemplo de uma data correta para o sistema: 10/12/2020\nInsira uma data novamente: ')
+          err = input('[data inválida] --- apenas coloque números na data.\nExemplo de uma data correta para o sistema: 10/12/2020\nInsira uma data novamente: ')
          
           if str(err).replace('/', '').isdigit():
               date = err

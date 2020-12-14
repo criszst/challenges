@@ -3,7 +3,7 @@
 
 def validate(date):
    msg = 'data válida'
-  
+
    if not date.replace('/', '').isdigit():
      while not date.isdigit():
        date = input('[data inválida] --- apenas coloque números. Coloque uma data no formato "dd/mm/yyyy" (exemplo: 15/7/2020).\nDigite uma data novamente: ')

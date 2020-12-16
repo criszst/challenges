@@ -18,7 +18,7 @@ if question == 1:
     again = int(input('número errado. Digite novamente: '))
     
     if again == int(rdn):
-        print(f'Você aceitou o número {rdn}!')
+        print(f'Você acertou o número {rdn}!')
         break
 
 

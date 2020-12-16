@@ -1,4 +1,4 @@
-from firstClass import user
+from WikiPython import user
 
 xpto = user('Adrian Cristian', '12')
 

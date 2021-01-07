@@ -2,6 +2,7 @@
 
 def extensive(date):
      day, month, year = map(int, date.split('/'))
+     msg = ''
    
      months = { 
           1: 'Janeiro',
@@ -32,29 +33,32 @@ def extensive(date):
      
      
      elif year < 0000:
-       msg = None
+       msg = 'data inválida'
      
      
      elif month == 2 and day >= 30:
-       msg = None
+       msg = 'data inválida'
    
    
      elif month in months_31 and day > 31:
-       msg = None
+       msg = 'data inválida'
     
     
      elif month in months_30 and day > 30:
-       msg = None
+       msg = 'data inválida'
     
     
      elif leap_year == True and month == 2 and day == 29:
-       msg = 'data válida'
+       msg = f'Data por extenso: {day} de {months[month]} de {year}'
     
     
      elif leap_year == False and month == 2 and day == 29:
-       msg = None
+       msg = 'data inválida'
        
-       return print(f'{msg}\nData por extenso: {day} de {months[int(date)]} de {year}')
+     else:
+       msg = f'Data por extenso: {day} de {months[month]} de {year}'
+       
+     return print(msg)
 
 data = input('Digite uma data:\n')
 

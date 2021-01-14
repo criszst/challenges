@@ -14,7 +14,7 @@ if not os.path.isfile('file.txt'):
              isNotDigit = False
              break
           
-         writeTxt = str(input('apenas escreva números, sem letras. Digite um cálculo:\n'))
+         writeTxt = str(input('apenas escreva números, sem letras...:\n'))
          
     
     f = open('file.txt', 'a')    

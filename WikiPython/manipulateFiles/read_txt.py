@@ -29,7 +29,7 @@ read = f.read()
 calc = read.split(' ')
 
 if len(calc) == 1:
-  print(f'não há cálculos para ser calculado. Texto no arquivo: {read}')
+  print(f'não há nada para ser calculado. Texto no arquivo: {read}')
   
 else:
   

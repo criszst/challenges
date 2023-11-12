@@ -1,5 +1,4 @@
 # programa para saber se a letra fornecida pelo usuário é uma vogal ou não.
-
 word = str(input('Qual é a letra?\n').lower())
 check = ''
 
